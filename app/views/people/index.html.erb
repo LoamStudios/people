@@ -1,0 +1,11 @@
+<h1>People</h1>
+
+<%= render 'people/form' %>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="people">
+      <%= render "people/list", people: @people %>
+    </div>
+  </div>
+</div>

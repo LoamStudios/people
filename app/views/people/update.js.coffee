@@ -1,0 +1,1 @@
+$("#<%= dom_id @person %>").replaceWith("<%= j render @person %>")

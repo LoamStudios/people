@@ -1,0 +1,1 @@
+$("#<%= dom_id @person%>").replaceWith("<%= j render "people/edit_form", person: @person %>")

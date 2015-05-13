@@ -1,0 +1,7 @@
+<%= content_tag_for :li, person, data: {remote: true, method: :get}, rel: "no-follow", href: edit_person_path(person), class: "list-group-item" do %>
+  <div class="person_fields">
+  <%= person.first_name %> <%= person.last_name %>
+  </div>
+  <%= link_to person, remote: true, method: :delete, data: { confirm: 'Are you sure?' } do %>
+    <%= icon('trash')%><% end %>
+<% end %>
